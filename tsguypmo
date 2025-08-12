@@ -1,0 +1,8 @@
+-- Unanchor everything in the Workspace
+for _, obj in pairs(workspace:GetDescendants()) do
+    if obj:IsA("BasePart") then
+        obj.Anchored = false
+    end
+end
+
+print("All parts have been unanchored!")
